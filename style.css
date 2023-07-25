@@ -13,6 +13,7 @@
 }
 
 body {
+  background: var(--very-dark-blue);
   font-family: "Overpass", sans-serif;
   display: flex;
   flex-direction: column;
