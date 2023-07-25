@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form id="rating-section">
+        <div class="star-logo">
+          <img src="images/icon-star.svg" alt="star" />
+        </div>
+
+        <h1>How did we do?</h1>
+        <p>
+          please let us know how we did your support request. All feedback is
+          appreciated to Help us improve our offering!.
+        </p>
+        <div class="rating">
+          <div id="number1" class="clickable" onclick="handleClick1()">1</div>
+          <div id="number2" class="clickable" onclick="handleClick2()">2</div>
+          <div id="number3" class="clickable" onclick="handleClick3()">3</div>
+          <div id="number4" class="clickable" onclick="handleClick4()">4</div>
+          <div id="number5" class="clickable" onclick="handleClick5()">5</div>
+        </div>
+
+        <br />
+
+        <button class="btn-submit">Submit</button>
+      </form>
+
+      <section id="thankyou-response" style="display: none" ;>
+        <img src="images/illustration-thank-you.svg" alt="thank you" />
+
+        <div class="selected">
+          <p class="choose">
+            You selected <span id="number-pick"></span> out of 5
+          </p>
+        </div>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nard</a>.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
